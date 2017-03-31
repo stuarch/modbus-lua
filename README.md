@@ -11,6 +11,7 @@ $ sudo make install
 ## Examples
 ```
 modbus=require("modbus")
+--<host>,port
 dev=modbus.new("192.168.1.1",502)
 
 dev:connect()
