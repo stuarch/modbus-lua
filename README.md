@@ -29,11 +29,14 @@ for k,v in pairs(value_table) do
     print(k, v)
 end
 
+msg = {[6]=257, [7]=257}
+dev:write(msg)
+
 --query address 7 and 8
 print(dev:mread(7,2))
 
 --write value 0 in address 9
-dev:write(9,0)
+dev:mwrite(9,0)
 
 dev:close()
 ```
