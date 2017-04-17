@@ -2,16 +2,16 @@
 Lua bindings for libmodbus.
 
 ## Installation
-```
+```shell
 $ sudo apt-get install liblua5.1-dev lua5.1 libmodbus-dev
 $ make
 $ sudo make install
 ```
 
 ## Examples
-```
+```lua
 modbus=require("modbus")
---<host>,port
+-- <host>,port
 dev=modbus.new("192.168.1.1",502)
 
 dev:connect()
